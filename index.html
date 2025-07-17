@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Răspunsul Antropologiei Ortodoxe la „Moartea Omului”</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Chosen Palette: Warm Neutrals with Subtle Accents */
+        /* Application Structure Plan: The application will be a single-page interactive document. It will feature a sticky header with navigation links to different sections. The main content area will be divided into logical, scrollable sections: "Introducere" (Problem), "Cauza Crizei" (Diagnosis), "Soluția Ortodoxă" (Solution, broken into "Theosis" and "Știință & Credință"), "Dimensiunea Eclesială", and "Concluzii". This structure was chosen to provide a clear narrative flow (problem-diagnosis-solution) while allowing users to quickly jump to areas of interest, making the academic content more digestible and explorable than a linear document. */
+        /* Visualization & Content Choices: Introducere & Cauza Crizei: Presented as concise text blocks. Goal: Inform. Method: Textual summary. Interaction: Scroll. Justification: These sections set the context and are best conveyed through direct explanation. Theosis (Îndumnezeirea): Goal: Explain a core concept and its relationships. Method: A simple HTML/CSS diagram (e.g., using flexbox/grid for layout, rounded borders, arrows with Unicode characters) to illustrate the "Dumnezeu - Om - Theosis" relationship. Interaction: Passive viewing. Justification: Visualizing this abstract concept makes it more intuitive. Reconcilierea Științei și Credinței: Goal: Compare and inform. Method: Textual explanation. Interaction: None beyond scrolling. Justification: The nuances are best conveyed through text. Dimensiunea Eclesială & Concluzii: Concise textual summaries. Goal: Inform. Method: Textual summary. Interaction: Scroll. Justification: These sections provide context and wrap up the argument. Navigation: Sticky header with smooth scroll links. Goal: Organize/Navigate. Method: HTML <a> tags with scroll-behavior: smooth. Interaction: Click to navigate. Justification: Improves usability for a single-page layout. General: All visual elements (icons, diagrams) will be created using HTML/CSS/Unicode characters. No Chart.js or Plotly.js will be used as there is no numerical data to visualize in a chart format, and the conceptual relationships are better served by simpler HTML/CSS diagrams. */
+        /* CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; /* Light beige/off-white background */
+            color: #333; /* Soft charcoal text */
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #a8dadc; /* Muted blue accent */
+            border-radius: 9999px;
+        }
+        .diagram-box {
+            background-color: #e0f2f7; /* Lighter blue for diagram boxes */
+            border: 1px solid #a8dadc;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            font-weight: 600;
+            color: #2c5282; /* Darker blue text */
+        }
+        .arrow {
+            font-size: 2rem;
+            color: #a8dadc;
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Antropologia Ortodoxă</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#introducere" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">Introducere</a></li>
+                    <li><a href="#cauza-crizei" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">Cauza Crizei</a></li>
+                    <li><a href="#solutia-ortodoxa" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">Soluția Ortodoxă</a></li>
+                    <li><a href="#dimensiunea-eclesiala" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">Biserica</a></li>
+                    <li><a href="#concluzii" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">Concluzii</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+
+        <!-- Introducere Section -->
+        <section id="introducere" class="mb-16 pt-16 -mt-16">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6 section-title">Introducere: „Moartea Omului”</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Această secțiune introduce criza de identitate umană din modernitate, sintetizată prin sintagma „moartea omului”. Aici veți înțelege cum filozofia recentă, în special prin Michel Foucault, a proclamat că noțiunea de „om” – cu o natură stabilă, un sens și un scop – este considerată o invenție culturală depășită.
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+                Secolul XX și începutul secolului XXI au fost profund marcate de o criză acută a identității umane. Această idee, proclamată teoretic în curente precum structuralismul și post-structuralismul deconstructivist, a redus conceptul de om la o simplă „relicvă epistemică”, sugerând că definirea tradițională a ființei umane aparține unei ere intelectuale apuse. Omul este dizolvat în structuri lingvistice, sociale sau istorice, pierzându-și astfel unicitatea și valoarea intrinsecă.
+            </p>
+        </section>
+
+        <!-- Cauza Crizei Section -->
+        <section id="cauza-crizei" class="mb-16 pt-16 -mt-16">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6 section-title">Cauza Crizei: Deicidul și Reducționismul</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Această secțiune explorează cauzele profunde ale crizei identității umane, evidențiind abandonarea definiției teologice a omului și ascensiunea nihilismului. Veți descoperi cum „moartea lui Dumnezeu” și abordările reducționiste au contribuit la o profundă dezumanizare.
+            </p>
+            <p class="text-base leading-relaxed text-gray-700 mb-4">
+                Această criză nu a apărut din neant. Ea este rezultatul direct al abandonării, în modernitate, a definiției teologice a omului. Odată ce omul a încetat să mai fie înțeles prin prisma relației sale cu Dumnezeu, a rămas „în căutarea unei definiții”, oscilând între a se vedea ca un semi-zeu (umanism) și a ajunge la concluzia că este un neant (post-structuralism).
+            </p>
+            <p class="text-base leading-relaxed text-gray-700 mb-4">
+                Mai specific, această criză este adânc înrădăcinată în ceea ce teologia ortodoxă numește „deicid” – adică respingerea și „moartea lui Dumnezeu” proclamată de gânditori precum Nietzsche. Această pierdere a fundamentului divin a dus la o devalorizare a moralității, a adevărului și, în cele din urmă, la o stare de lipsă absolută de sens, culminând cu nihilismul.
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+                Pe lângă aceasta, abordările reducționiste ale omului, care îl definesc exclusiv prin biologie, psihologie sau sociologie, l-au redus la simple „nevoi elementare” sau „pulsiuni”. Această fragmentare a viziunii asupra omului a ignorat complexitatea sa integrală și a contribuit la o profundă dezumanizare.
+            </p>
+        </section>
+
+        <!-- Soluția Ortodoxă Section -->
+        <section id="solutia-ortodoxa" class="mb-16 pt-16 -mt-16">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6 section-title">Soluția: Antropologia Ortodoxă</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Această secțiune prezintă răspunsul fundamental al Ortodoxiei la criza identității umane, concentrându-se pe două idei esențiale: conceptul de Theosis (îndumnezeire) și reconcilierea dintre știință și credință.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <!-- Theosis Sub-section -->
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-700 mb-4">1. Theosis (Îndumnezeirea): Vocația Supremă a Omului</h3>
+                    <p class="text-base leading-relaxed text-gray-700 mb-6">
+                        Ortodoxia afirmă că identitatea umană fundamentală nu poate fi găsită decât în relația sa cu Creatorul. Omul este creat „după chipul și asemănarea lui Dumnezeu”, având un potențial de comuniune. Scopul vieții umane este *Theosis* – un proces continuu de transformare, prin har, în care omul participă la viața divină și devine tot mai asemenea lui Hristos.
+                    </p>
+                    <!-- Theosis Diagram -->
+                    <div class="flex flex-col items-center justify-center space-y-4 p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <div class="diagram-box">Dumnezeu</div>
+                        <span class="arrow">↓</span>
+                        <div class="diagram-box">Omul (creat după chip)</div>
+                        <span class="arrow">↓</span>
+                        <div class="diagram-box">Theosis (Îndumnezeire prin Har)</div>
+                    </div>
+                </div>
+
+                <!-- Reconcilierea Științei și Credinței Sub-section -->
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-700 mb-4">2. Reconcilierea Științei și Credinței</h3>
+                    <p class="text-base leading-relaxed text-gray-700 mb-6">
+                        Ortodoxia depășește dihotomiile rigide dintre știință și credință, afirmând că adevăratul conflict nu este între rațiune și credință, ci între anumite forme de știință și teologie. Știința contemporană, în special fizica cuantică, descoperă adesea ceea ce Biblia a revelat deja, cum ar fi „conectivitatea universală”.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-700">
+                        Conceptul „teocosmoantropic” propune o realitate integrată în care Dumnezeu, cosmosul și omul sunt intrinsec interconectate. Știința și teologia au domenii distincte, dar complementare; problema apare când una este ridicată la rang de adevăr absolut, iar cealaltă este subminată. Această perspectivă permite un dialog constructiv și o înțelegere holistică a universului.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dimensiunea Eclesială Section -->
+        <section id="dimensiunea-eclesiala" class="mb-16 pt-16 -mt-16">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6 section-title">Dimensiunea Eclesială și Sacramentală</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Această secțiune subliniază rolul esențial al Bisericii și al Sfintelor Taine în procesul de îndumnezeire.
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+                Procesul de îndumnezeire este ferm ancorat în viața comunitară și liturgică a Bisericii. Biserica este considerată continuarea vie a prezenței și lucrării lui Hristos în lume, devenind locul principal unde îndumnezeirea este actualizată pentru umanitate. Sfintele Taine nu sunt doar ritualuri simbolice, ci mijloace reale prin care harul divin, nemurirea și sfințenia sunt comunicate tangibil credincioșilor, permițând îndumnezeirea lor.
+            </p>
+        </section>
+
+        <!-- Concluzii Section -->
+        <section id="concluzii" class="mb-16 pt-16 -mt-16">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6 section-title">Concluzii: O Contra-Narativă Plină de Speranță</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Această secțiune rezumă argumentul central al lucrării, evidențiind modul în care antropologia ortodoxă oferă o soluție cuprinzătoare și plină de speranță la criza modernă a identității umane.
+            </p>
+            <p class="text-base leading-relaxed text-gray-700 mb-4">
+                Antropologia ortodoxă oferă o contra-narativă cuprinzătoare și plină de speranță la antropologiile seculare moderne. Ea nu doar diagnostichează criza „morții omului” ca rezultat al abandonării fundamentului teologic și al abordărilor reducționiste, ci propune o cale de restaurare a demnității și sensului uman, ancorată într-o relație profundă cu Dumnezeu și cu întreaga creație.
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+                Prin viziunea *Theosis*-ului, omul este înțeles ca o ființă creată după chipul lui Dumnezeu, chemată la participarea la viața divină. Această sinteză ortodoxă reprezintă o schimbare fundamentală de paradigmă, o propunere proactivă pentru o înțelegere integrată a umanității și a cosmosului, provocând viziunile fragmentate și dualiste care au condus la „moartea omului”.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Antropologia Ortodoxă. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
